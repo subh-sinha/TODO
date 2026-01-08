@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    height: 100vh;
+    margin: 3.5%;
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+}
+.slider {
+    border: 3px solid black;
+    padding-right: 3%;
+    margin-right: 2%;
+}
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 14% 10% 1fr;
+    /*height: 800px;*/
+}
+.top-cont {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+#add-form {
+    margin: 0.8rem 0;
+    /*border: 2px solid black;*/
+    padding: 0.3rem;
+}
+.adder-cont {
+    border: 2px solid black;
+}
+.task-cont {
+    border: 2px solid black;
+}
+
+.task {
+    display: flex;
+    border: 2px solid green;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2px 0;
+}
+
+.task-btn-cont {
+    display: flex;
+    /*border: 2px solid green;*/
+    flex-direction: row;
+}
+.task-btn {
+    border: 1px solid red;
+    margin: 0 5px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.side-cont{
+    /* display: none; */
+    list-style-type: none;
+}
+.side-cont > li {
+    margin: 2px;
+}
+
+.task-name{
+    cursor: pointer;
+}
+.task-name[contenteditable="true"]{
+    outline: 2px dashed #4caf50;
+}
